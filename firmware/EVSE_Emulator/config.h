@@ -6,7 +6,8 @@
 #define LED_ERR 13
 
 void set_statusleds(int status);
-void init_leds();
+void init_leds(void);
+void set_pwm(int width);
 
 enum STATUS {
   STATUS_IDLE = 0x01,
@@ -15,4 +16,9 @@ enum STATUS {
   STATUS_COOLING = 0x08,
   STATUS_CONERROR = 0x10,
   STATUS_ERROR = 0x20
+};
+
+enum PWM_MODE {
+  PWM_ALWAYS_ON = 249,  // 100% PWM for negotiation
+  PWM_30A = 125         // 50% PWM equals 30A
 };
