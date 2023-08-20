@@ -5,17 +5,20 @@
 #define LED_CERR 12
 #define LED_ERR 13
 
+#define ADC_PWM 0
+#define ADC_PP 1
+
 void set_statusleds(int status);
 void init_leds(void);
 void set_pwm(int width);
 
-enum STATUS {
-  STATUS_IDLE = 0x01,
-  STATUS_CONNECTED = 0x02,
-  STATUS_CHARGING = 0x04,
-  STATUS_COOLING = 0x08,
-  STATUS_CONERROR = 0x10,
-  STATUS_ERROR = 0x20
+enum STATE {
+  STATE_IDLE = 0x01,
+  STATE_CONNECTED = 0x02,
+  STATE_CHARGING = 0x04,
+  STATE_COOLING = 0x08,
+  STATE_CONERROR = 0x10,
+  STATE_ERROR = 0x20
 };
 
 enum PWM_MODE {

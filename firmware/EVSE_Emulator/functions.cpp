@@ -11,12 +11,12 @@ void init_leds() {
 }
 
 void set_statusleds(int status) {
-  digitalWrite(LED_IDLE, status & STATUS_IDLE);
-  digitalWrite(LED_CONN, status & STATUS_CONNECTED);
-  digitalWrite(LED_CHRG, status & STATUS_CHARGING);
-  digitalWrite(LED_COOL, status & STATUS_COOLING);
-  digitalWrite(LED_CERR, status & STATUS_CONERROR);
-  digitalWrite(LED_ERR, status & STATUS_ERROR);
+  digitalWrite(LED_IDLE, status & STATE_IDLE);
+  digitalWrite(LED_CONN, status & STATE_CONNECTED);
+  digitalWrite(LED_CHRG, status & STATE_CHARGING);
+  digitalWrite(LED_COOL, status & STATE_COOLING);
+  digitalWrite(LED_CERR, status & STATE_CONERROR);
+  digitalWrite(LED_ERR, status & STATE_ERROR);
 }
 
 void set_pwm(int width) {
