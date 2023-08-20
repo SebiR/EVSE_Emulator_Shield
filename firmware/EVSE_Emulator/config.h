@@ -8,9 +8,19 @@
 #define ADC_PWM 0
 #define ADC_PP 1
 
+#define VOLT_IDLE 12.0
+#define VOLT_CONNECTED 9.0
+#define VOLT_CHARGING 6.0
+#define VOLT_COOLING 3.0
+#define VOLT_CONERROR 0.0
+#define VOLT_ERROR -12.0
+#define VOLT_WINDOW 1.0 // Tolerance for voltage
+
 void set_statusleds(int status);
 void init_leds(void);
 void set_pwm(int width);
+int volt2state(float volt);
+float mapfloat(long x, long in_min, long in_max, long out_min, long out_max);
 
 enum STATE {
   STATE_IDLE = 0x01,
