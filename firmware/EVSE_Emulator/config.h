@@ -16,6 +16,8 @@
 #define VOLT_ERROR -12.0
 #define VOLT_WINDOW 1.0 // Tolerance for voltage
 
+#define PILOT_ADC_AVG 50 //Number of cycles for pilot adc signal averaging
+
 void set_statusleds(int status);
 void init_leds(void);
 void set_pwm(int width);
