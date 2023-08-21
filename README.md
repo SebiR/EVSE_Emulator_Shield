@@ -8,5 +8,14 @@ An Arduino shield to emulate an EVSE (Electric Vehicle Supply Equipment), so bas
 * Pilot level and PP level go to ADC channels
 * Status LEDs
 
-# Firmware
+## Firmware
 The Firmware is still in progress. It will be documented once finished
+
+## Resources
+https://www.goingelectric.de/wiki/Typ2-Signalisierung-und-Steckercodierung/
+
+## Disclaimer
+This project was created to test an EV emulator. This project is not intended to be used in an actual Wallbox. 
+There are no safety features and neither the firmware nor the hardware are created with robustness and safety in mind.
+
+Use at your own risk. Im not liable for burning houses, cars or pants.
