@@ -23,7 +23,7 @@ void loop() {
 
   if (pilot_adc_flag) {
 
-    float pilot_volt = mapfloat(pwm_adc_value / average_counter, 160, 830, -12.0, 12.0);
+    float pilot_volt = mapfloat(pwm_adc_value / average_counter, 160, 840, -12.0, 12.0);
     Serial.println("Pilot Voltage:" + String(pilot_volt) + " [raw: " + String(pwm_adc_value / average_counter) + "]");
     fsm_state = volt2state(pilot_volt);
 
