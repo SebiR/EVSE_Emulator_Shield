@@ -6,14 +6,12 @@ volatile bool pilot_adc_flag = LOW;
 
 int fsm_state = STATE_IDLE;
 
-
-
 void setup() {
 
   // Debug Pin
   pinMode(7, OUTPUT);
 
-  Serial.begin(9600);
+  Serial.begin(115200);
   init_leds();
 
   Serial.println("EVSE Emulator 1.0");
@@ -38,28 +36,23 @@ void loop() {
     case STATE_IDLE:
       Serial.println("FSM: IDLE");
       set_pwm(PWM_ALWAYS_ON);
-      //fsm_state = STATE_CONNECTED;
       break;
     case STATE_CONNECTED:
       Serial.println("FSM: CONNECTED");
       delay(500);
       set_pwm(PWM_30A);
-      //fsm_state = STATE_CHARGING;
       break;
     case STATE_CHARGING:
       Serial.println("FSM: CHARGING");
       set_pwm(PWM_30A);
-      //fsm_state = STATE_COOLING;
       break;
     case STATE_COOLING:
       Serial.println("FSM: COOLING");
       set_pwm(PWM_30A);
-      //fsm_state = STATE_CONERROR;
       break;
     case STATE_CONERROR:
       Serial.println("FSM: CONNECTION ERROR");
       set_pwm(PWM_ALWAYS_ON);
-      //fsm_state = STATE_ERROR;
       break;
     case STATE_ERROR:
       Serial.println("FSM: ERROR");

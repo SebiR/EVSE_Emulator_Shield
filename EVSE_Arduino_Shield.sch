@@ -8416,7 +8416,7 @@ W = angled&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="MT3608" urn="urn:adsk.eagle:component:41194973/1" prefix="IC" library_version="23">
+<deviceset name="MT3608" urn="urn:adsk.eagle:component:41194973/2" prefix="IC" library_version="24">
 <gates>
 <gate name="G$1" symbol="MT3608" x="0" y="0"/>
 </gates>
@@ -8427,7 +8427,7 @@ W = angled&lt;p&gt;
 <connect gate="G$1" pin="FB" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="SW" pad="1"/>
-<connect gate="G$1" pin="VIN" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="5"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:41021867/1"/>
@@ -12369,7 +12369,7 @@ Copyright: Würth Elektronik</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="691214310003" urn="urn:adsk.eagle:component:16280624/1" prefix="J" uservalue="yes" library_version="2">
+<deviceset name="691214310003" urn="urn:adsk.eagle:component:16280624/2" prefix="J" library_version="3">
 <description>&lt;b&gt;WR-TBL Serie 2143 - 3.81 mm Horiz. Entry Modular&lt;/b&gt;
 &lt;br&gt;
 &lt;br&gt;&lt;b&gt;
@@ -12444,15 +12444,15 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/TBL_3_81_2143_HORIZ
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/691214310003.pdf" constant="no"/>
-<attribute name="IR-UL" value="10A" constant="no"/>
-<attribute name="MOUNT" value="THT" constant="no"/>
-<attribute name="PART-NUMBER" value=" 691214310003 " constant="no"/>
-<attribute name="PINS" value=" 3 " constant="no"/>
-<attribute name="PITCH" value="3.81mm" constant="no"/>
-<attribute name="TYPE" value="Horizontal" constant="no"/>
-<attribute name="WIRE" value="24 to 16 (AWG) 0.205 to 1.31 (mm²)" constant="no"/>
-<attribute name="WORKING-VOLTAGE-UL" value="300V (AC)" constant="no"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/redexpert/spec/691214310003?ae"/>
+<attribute name="IR-UL" value="10A"/>
+<attribute name="MOUNT" value="THT"/>
+<attribute name="PART-NUMBER" value=" 691214310003 "/>
+<attribute name="PINS" value=" 3 "/>
+<attribute name="PITCH" value="3.81mm"/>
+<attribute name="TYPE" value="Horizontal"/>
+<attribute name="WIRE" value="24 to 16 (AWG) 0.205 to 1.31 (mm²)"/>
+<attribute name="WORKING-VOLTAGE-UL" value="300V (AC)"/>
 </technology>
 </technologies>
 </device>
@@ -14860,9 +14860,9 @@ Falstad: https://tinyurl.com/23mjfdbn</text>
 <attribute name="VALUE" x="232.41" y="144.78" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="232.41" y="131.318" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="JP3" gate="A" x="358.14" y="223.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="360.68" y="228.6" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="353.695" y="228.6" size="1.778" layer="96" rot="R270"/>
+<instance part="JP3" gate="A" x="355.6" y="226.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="358.14" y="231.14" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="351.155" y="231.14" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -15196,8 +15196,8 @@ Falstad: https://tinyurl.com/23mjfdbn</text>
 <label x="147.32" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="358.14" y1="231.14" x2="358.14" y2="236.22" width="0.1524" layer="91"/>
-<label x="358.14" y="236.22" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="355.6" y1="233.68" x2="355.6" y2="238.76" width="0.1524" layer="91"/>
+<label x="355.6" y="238.76" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="JP3" gate="A" pin="1"/>
 </segment>
 </net>
@@ -15369,9 +15369,9 @@ Falstad: https://tinyurl.com/23mjfdbn</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="D2"/>
 <pinref part="JP3" gate="A" pin="2"/>
-<wire x1="358.14" y1="213.36" x2="358.14" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="D3"/>
+<wire x1="355.6" y1="213.36" x2="355.6" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
