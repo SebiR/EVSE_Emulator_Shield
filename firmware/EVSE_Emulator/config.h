@@ -35,5 +35,8 @@ enum STATE {
 
 enum PWM_MODE {
   PWM_ALWAYS_ON = 249,  // 100% PWM for negotiation
-  PWM_30A = 125         // 50% PWM equals 30A
+  PWM_30A = 125,         // 50% PWM equals 30A
+  PWM_16A = 65,         // 27% PWM equals 16A
+  PWM_10A = 40,         // 16% PWM equals 10A
+  PWM_6A = 25         // 10% PWM
 };
